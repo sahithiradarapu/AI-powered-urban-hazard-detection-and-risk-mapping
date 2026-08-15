@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Urban Risk Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AI Urban Risk Intelligence</h1>
+        <p>AI-powered urban hazard detection and risk mapping</p>
+    </header>
+
+    <main>
+
+        <section class="upload-section">
+
+            <h2>Detect Urban Hazards</h2>
+
+            <p>
+                Upload a road image to detect hazards using Artificial Intelligence.
+            </p>
+
+            <input type="file" id="imageInput" accept="image/*">
+
+            <button type="button" onclick="detectHazard()">
+    Detect Hazard
+</button>
+
+        </section>
+
+
+        <section class="result-section">
+
+            <h2>Detection Result</h2>
+
+            <div id="result">
+                No detection yet.
+            </div>
+
+        </section>
+
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Total Hazards</h3>
+                <p id="totalHazards">0</p>
+            </div>
+
+            <div class="card">
+                <h3>High Risk</h3>
+                <p id="highRisk">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Medium Risk</h3>
+                <p id="mediumRisk">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Low Risk</h3>
+                <p id="lowRisk">0</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
